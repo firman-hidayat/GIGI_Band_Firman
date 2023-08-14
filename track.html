@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projek/track.css" />
+    <title>GIGI</title>
+  </head>
+  <body>
+      
+      <!-- CONTENT -->
+
+      <main>
+        <header>
+          <h1>GIGI BAND</h1>
+        </header>
+    
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="#">Discography</a>
+              <ul class="sub-menu">
+                <li><a href="lyric.html">lyric</a></li>
+                <li><a href="track.html">sample track</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Store</a>
+              <ul class="sub-menu">
+                <li><a href="store.html">toko</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+              <ul class="sub-menu">
+                <li><a href="telepon.html">tlp</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">About</a>
+              <ul class="sub-menu">
+                <li><a href="biography.html">Biography</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+    
+          <div class="controls">
+            <button id="prevBtn" class="prev-btn">
+              <img
+                class="prev"
+                id="prevIcon"
+                src="/projek/Previous.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </button>
+            <button id="playPauseBtn" class="play-btn">
+              <img
+                class="play"
+                id="playIcon"
+                src="/projek/play.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+              <img
+                class="pause"
+                id="pauseIcon"
+                src="/projek/pause.png"
+                alt=""
+                width="20px"
+                height="20px"
+                style="display: none"
+              />
+            </button>
+            <button id="nextBtn" class="next-btn">
+              <img
+                class="next"
+                id="nextIcon"
+                src="/projek/next.png"
+                alt=""
+                width="20px"
+                height="20px"
+              />
+            </button>
+          </div>
+          <div class="song-info">
+            <h2 id="songTitle">11 Januari</h2>
+          </div>
+          <div class="time-bar">
+            <div class="progress-bar"></div>
+          </div>
+          <audio
+            id="audio-player"
+            src="/projek/11-januari.mp3"
+            src="/projek/nakal.mp3"
+            src="/projek/janji.mp3"
+          ></audio>
+        </section>
+      </main>
+
+      <!-- END -->
+
+      <!-- LIST SONG -->
+
+      <div class="list-song">
+        <div class="box-title">List Song</div>
+        <div class="box song" id="songList"></div>
+      </div>
+
+      <!-- END -->
+
+      <footer>&copy; 2023 GIGI BAND.</footer>
+
+      <script src="/projek/track.js"></script>
+    </div>
+  </body>
+</html>

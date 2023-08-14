@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gigi</title>
+    <style>
+      /* CSS untuk tampilan dasar */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 10px;
+        background-image: url("/projek/band.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      /* CSS untuk header */
+      header {
+        color: #f5eaea;
+        padding: 15px;
+        text-align: center;
+      }
+
+      /* CSS untuk konten */
+      .content {
+        padding: 10px;
+        margin-top: 400px;
+      }
+
+      /* CSS untuk daftar album */
+      .album-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .album-list li {
+        margin-bottom: 5px;
+      }
+
+      /* CSS untuk footer */
+      footer {
+        background-color: #5f5353;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        list-style-type: none;
+        padding: 5px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background-color: #5f5353;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .menu li {
+        margin-right: 10px;
+        position: relative;
+      }
+
+      .menu li a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .menu > li:hover .sub-menu {
+        display: block;
+        transform: scaleY(1);
+      }
+
+      .sub-menu li {
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 8px;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+
+      .menu > li:hover .sub-menu li {
+        transform: scaleY(1);
+      }
+      @media (max-width: 600px) {
+        .content {
+          margin-top: 200px;
+        }
+
+        .menu {
+          flex-direction: column;
+          position: static;
+          background-color: transparent;
+          width: 100%;
+          margin: 0;
+        }
+
+        .menu li {
+          margin-right: 0;
+          position: static;
+        }
+
+        .menu > li:hover .sub-menu {
+          display: none;
+          transform: scaleY(0);
+        }
+
+        .sub-menu {
+          position: static;
+          transform: scaleY(1);
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>GIGI BAND</h1>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Discography</a>
+          <ul class="sub-menu">
+            <li><a href="lyric.html">lyric</a></li>
+            <li><a href="track.html">sample track</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Store</a>
+          <ul class="sub-menu">
+            <li><a href="store.html">toko</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <ul class="sub-menu">
+            <li><a href="telepon.html">tlp</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About</a>
+          <ul class="sub-menu">
+            <li><a href="biography.html">Biography</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h2>Album</h2>
+      <ul class="album-list">
+        <li>Album 1</li>
+      </ul>
+    </div>
+
+    <footer>&copy; 2023 GIGI BAND.</footer>
+  </body>
+</html>

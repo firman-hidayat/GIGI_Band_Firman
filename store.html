@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: cadetblue;
+      }
+
+      header {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      header a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .row-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .column-images {
+        flex: 33.33%;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .content-images {
+        background-color: white;
+        text-align: center;
+        padding: 10px;
+      }
+
+      .content-images img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      footer {
+        background-color: #5f5353;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        list-style-type: none;
+        padding: 5px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background-color: #5f5353;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .menu li {
+        margin-right: 10px;
+        position: relative;
+      }
+
+      .menu li a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .menu > li:hover .sub-menu {
+        display: block;
+        transform: scaleY(1);
+      }
+
+      .sub-menu li {
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 8px;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+
+      .menu > li:hover .sub-menu li {
+        transform: scaleY(1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#">Discography</a>
+          <ul class="sub-menu">
+            <li><a href="lyric.html">lyric</a></li>
+            <li><a href="track.html">sample track</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Store</a>
+          <ul class="sub-menu">
+            <li><a href="store.html">toko</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+          <ul class="sub-menu">
+            <li><a href="telepon.html">tlp</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About</a>
+          <ul class="sub-menu">
+            <li><a href="biography.html">Biography</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="row-images">
+      <div class="column-images">
+        <div class="content-images">
+          <a
+            href="https://shopee.co.id/Kaos-Distro-Pria-GIGI-BAND-THE-BEST-Premium-Thsirt-Music-Band-i.10378396.22248803567?sp_atk=2509e5ca-f854-4cdd-8121-18f6b9966cab&xptdk=2509e5ca-f854-4cdd-8121-18f6b9966cab"
+          >
+            <img
+              src="/projek/BAJU1.JPG"
+              alt="Mountains"
+              height="100%"
+              width="50%"
+            />
+          </a>
+          <h3>T-Shirt 1</h3>
+          <p>Rp.50.000</p>
+        </div>
+      </div>
+      <div class="column-images">
+        <div class="content-images">
+          <a
+            href="https://shopee.co.id/KAOS-GIGI-ANGAN-i.63913859.7785868082?sp_atk=04634ddc-7d39-4aed-99cd-d67e8e93a692&xptdk=04634ddc-7d39-4aed-99cd-d67e8e93a692"
+          >
+            <img
+              src="/projek/BAJU5.JPG"
+              alt="Lights"
+              height="100%"
+              width="50%"
+            />
+          </a>
+          <h3>T-Shirt 2</h3>
+          <p>Rp.95.000</p>
+        </div>
+      </div>
+      <div class="column-images">
+        <div class="content-images">
+          <a
+            href="https://shopee.co.id/Kaos-Custom-Gigi-Band-Angan-Kaos-Distro-(Bisa-Desain-Sesukamu)-i.36123847.17005769255?sp_atk=2c591b02-3a05-4239-a0e6-d96f354ed9fe&xptdk=2c591b02-3a05-4239-a0e6-d96f354ed9fe"
+          >
+            <img
+              src="/projek/KAOS GIGI.jpg"
+              alt="Nature"
+              height="100%"
+              width="50%"
+            />
+          </a>
+          <h3>T-Shirt 3</h3>
+          <p>Rp.110.000</p>
+        </div>
+      </div>
+    </div>
+    <footer>&copy; 2023 GIGI BAND.</footer>
+  </body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        background-image: url("/projek/konser.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #f7f1f1;
+        padding: 10px;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("/projek/konser.jpg");
+        filter: blur(8px);
+        z-index: -1;
+      }
+
+      .lyrics {
+        position: static;
+        top: 0;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        max-width: 800px;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        user-select: text;
+        margin: 0 auto;
+        overflow: auto;
+        max-height: 70vh;
+      }
+
+      .lyrics h1 {
+        cursor: pointer;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .lyrics {
+        overflow: auto;
+        max-height: 70vh;
+      }
+
+      header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      footer {
+        background-color: #5f5353;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        list-style-type: none;
+        padding: 5px;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        background-color: #5f5353;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      .menu li {
+        margin-right: 10px;
+        position: relative;
+      }
+
+      .menu li a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .sub-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .menu > li:hover .sub-menu {
+        display: block;
+        transform: scaleY(1);
+      }
+
+      .sub-menu li {
+        font-size: 14px;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 8px;
+        color: white;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        transform: scaleY(0);
+        transform-origin: top center;
+        transition: all 300ms ease-in-out;
+      }
+
+      .sub-menu li:last-child {
+        border-bottom: 0;
+      }
+
+      .menu > li:hover .sub-menu li {
+        transform: scaleY(1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="#">Discography</a>
+            <ul class="sub-menu">
+              <li><a href="lyric.html">lyric</a></li>
+              <li><a href="track.html">sample track</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Store</a>
+            <ul class="sub-menu">
+              <li><a href="store.html">toko</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+            <ul class="sub-menu">
+              <li><a href="telepon.html">tlp</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">About</a>
+            <ul class="sub-menu">
+              <li><a href="biography.html">Biography</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="lyrics">
+      <h1 onclick="toggleLyric('lyric1')">1. 11 Januari</h1>
+      <div id="lyric1" style="display: none; text-align: center">
+        <p>
+          11 Januari bertemu<br />
+          Menjalani kisah cinta ini<br />
+          Naluri berkata engkaulah<br />
+          Milikku<br />
+          Bahagia selalu dimiliki<br />
+          Bertahun menjalani bersamamu<br />
+          Kunyatakan bahwa engkaulah<br />
+          Jiwaku<br />
+          Akulah penjagamu<br />
+          Akulah pelindungmu<br />
+          Akulah pendampingmu<br />
+          Di setiap langkah-langkahmu<br />
+          Pernah ku menyakiti hatimu<br />
+          Pernah kau melupakan janji ini<br />
+          Semua karena kita ini<br />
+          Manusia<br />
+          Akulah penjagamu<br />
+          Akulah pelindungmu<br />
+          Akulah pendampingmu<br />
+          Di setiap langkah-langkahmu<br />
+          Kau bawa diriku ke dalam hidupmu<br />
+          Kau basuh diriku dengan rasa sayang<br />
+          Senyummu juga sedihmu adalah hidupku<br />
+          Kau sentuh cintaku dengan lembut<br />
+          Dengan sejuta warna<br />
+          Ho-oh-oh<br />
+          Ho-wo-oh<br />
+          Kau bawa diriku ke dalam hidupmu<br />
+          Kau basuh diriku dengan rasa sayang<br />
+          Senyummu juga sedihmu adalah hidupku<br />
+          Kau sentuh cintaku dengan lembut<br />
+          Dengan sejuta warna<br />
+          11 Januari bertemu<br />
+          Menjalani kisah cinta ini<br />
+          Naluri berkata engkaulah<br />
+          Milikku<br />
+        </p>
+      </div>
+
+      <h1 onclick="toggleLyric('lyric2')">2. Nakal</h1>
+      <div id="lyric2" style="display: none">
+        <p>
+          "Ampun, aduh ampun<br />
+          Sudah lega dan menggoda kepadaku<br />
+          Wowo, wowo<br />
+          Kerlingan mata nakalmu<br />
+          Terus memandang dan merayu kepadaku<br />
+          Wowo, wowo<br />
+          Oh, ku hanya bisa menahan perasaan<br />
+          Tolonglah semoga ini bukanlah mimpi di siang bolong<br />
+          Wowo, wowo<br />
+          Tolonglah, tolonglah ibu<br />
+          Aku jadi seperti orang yang bloon<br />
+          Wowo, wowo<br />
+          Oh, ku hanya bisa menahan perasaan<br />
+          Oh, semua karena kelakuan nakalmu<br />
+          Panas, panas, panas<br />
+          Panas, badan ini<br />
+          Pusing, pusing, pusing<br />
+          Pusing, kepala ini<br />
+          Tolonglah semoga ini bukanlah mimpi di siang bolong<br />
+          Wowo, wowo<br />
+          Tolonglah, tolonglah ibu<br />
+          Aku jadi seperti orang yang bloon<br />
+          Wowo, wowo<br />
+          Oh, ku hanya bisa menahan perasaan<br />
+          Oh, semua karena kelakuan nakalmu<br />
+          Panas, panas, panas<br />
+          Panas, badan ini<br />
+          Pusing, pusing, pusing<br />
+          Pusing, kepala ini<br />
+          Panas, panas, panas<br />
+          Panas, badan ini<br />
+          Pusing, pusing, pusing<br />
+          Pusing, kepala ini<br />
+          Oh, ku hanya bisa menahan perasaan<br />
+          Oh, semua karena kelakuan nakalmu<br />
+          Oh, ku hanya bisa menahan perasaan<br />
+          Oh, semua karena kelakuan<br />
+          Panas, panas, panas<br />
+          Panas, badan ini<br />
+          Pusing, pusing, pusing<br />
+          Pusing, kepala ini<br />
+          Panas, panas, panas<br />
+          Panas, badan ini<br />
+          Pusing, pusing, pusing<br />
+          Pusing, kepala ini>br> Panas, panas, panas<br />
+          Panas, badan ini<br />
+          Pusing, pusing, pusing<br />
+          Pusing, oh<br />
+        </p>
+      </div>
+
+      <h1 onclick="toggleLyric('lyric3')">3. Janji</h1>
+      <div id="lyric3" style="display: none">
+        <p>
+          We e e e e<br />
+          We o o o o<br />
+          We e e e e<br />
+          We o o o o<br />
+          Saat ini kumencoba<br />
+          Ingkari hari dengan janji<br />
+          Untuk wujudkan semua impian<br />
+          Yang selalu menggoda slalu menggoda<br />
+          Takkan kulepas lagi<br />
+          Semua waktuku dan waktumu<br />
+          Disaat kita dipacu rindu<br />
+          Semakin dalam semakin dalam<br />
+          Oh janjiku<br />
+          Takkan kulepas<br />
+          Selamanya<br />
+          Oh janjiku<br />
+          Kuikuti kata hatiku<br />
+          Saat ini kumencoba<br />
+          Ingkari hari dengan janji<br />
+          Untuk wujudkan semua impian<br />
+          Yang selalu menggoda slalu menggoda<br />
+          Takkan kulepas lagi<br />
+          Semua waktuku dan waktumu<br />
+          Disaat kita dipacu rindu<br />
+          Semakin dalam semakin dalam<br />
+          Oh janjiku<br />
+          Takkan kulepas<br />
+          Selamanya<br />
+          Oh janjiku<br />
+          Kuikuti kata hatiku<br />
+          Oh janjiku<br />
+          Takkan kulepas<br />
+          Selamanya<br />
+          Oh janjiku<br />
+          Kuikuti kata hatiku<br />
+          Oh janjiku<br />
+          Takkan kulepas<br />
+          Selamanya<br />
+          Oh janjiku<br />
+          Kuikuti kata hatiku<br />
+          Oh janjiku<br />
+          Takkan kulepas<br />
+          Selamanya<br />
+          Oh janjiku<br />
+          Kuikuti kata hatiku<br />
+          Oh janjiku<br />
+          Takkan kulepas<br />
+          Selamanya<br />
+          Oh janjiku<br />
+          Kuikuti kata hatiku<br />
+        </p>
+      </div>
+    </div>
+    <footer>&copy; 2023 GIGI BAND.</footer>
+
+    <script>
+      function toggleLyric(lyricId) {
+        var lyricDiv = document.getElementById(lyricId);
+        if (lyricDiv.style.display === "none") {
+          lyricDiv.style.display = "block";
+        } else {
+          lyricDiv.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
